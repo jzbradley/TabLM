@@ -8,16 +8,18 @@ For example, ascending and descending the C major scale in 4/4 time:
 ```
 
 ## Staff Heading
-First write the time and root note. If you are familiar with guitar tab, the root would be the open string note. If desired, you may write the key signature.
+First write the time and root note. If you are familiar with guitar tab, the root would be the open string note.
 For example:
 ```tablm
 4/4 E
 ```
 would indicate that the root note is E, without specifying a particular key.
-Alternatively, the key signature may be glossed here, as in 3/4 time C Major:
+
+Alternatively, the key signature and mode may be glossed here, as in 3/4 time C Major (ionian):
 ```tablm
 3/4 C Maj
 ```
+Working within music theory may be more efficient and accurate for LLMs - particularly where melodies interact with chord progressions.
 
 For sharp and flat use either # and b respectively or the appropriate the unicode symbols, ♯ and ♭, in order to prevent confusion between the note letter B and the flat symbol.
 
@@ -82,3 +84,13 @@ Alternatively, if the key signature is indicated then we can provide the scale d
 [min i6/5] 9q 10q 12q | [IV4/3] 9h (5q | [min ♭VI] 5h) (0q | [min ♭VII] 0h) -q
 ```
 Note the description of chords borrowed from minor scale.
+
+Note that a chord change can accompany a rest, and also need not necessarily appear at the beginning of a measure.
+
+There may be some awkwardness if a change needs to be specified in the middle of a melodic note, in which case a tie could be used.
+
+Here, a measure starts with a C major chord under melodic C, which continues over a change to an E major chord:
+```tablm
+4/4 C
+[C] (0h [E] 0h)
+```
